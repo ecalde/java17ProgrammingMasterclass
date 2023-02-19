@@ -9,11 +9,10 @@ public class OverloadMethod {
         } else
             return "Invalid Value";
     }
-    public static String getDurationString(int minutes, int seconds){
-        if ( (minutes >= 0) && ( (seconds >= 0) && (seconds <= 59) ) ) {
-            return ((minutes / 60) + " h " + (minutes % 60 ) + " m " + (seconds % 60) + " s'");
+    public static String getDurationString(int minutes, int seconds) {
+        if ((minutes >= 0) && ((seconds >= 0) && (seconds <= 59))) {
+            return ((minutes / 60) + " h " + (minutes % 60) + " m " + (seconds % 60) + " s'");
         } else
             return "Invalid Value";
     }
-    // testing update
 }
