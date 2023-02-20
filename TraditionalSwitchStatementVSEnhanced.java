@@ -68,7 +68,6 @@ public class TraditionalSwitchStatementVSEnhanced {
                 //  - When your Switch statement is being used as a switch expression returning a value
                 //  - Your case label uses a code block, with opening and closing curly braces.
                 yield badResponse;
-                // This is a test
             }
         };
     }
