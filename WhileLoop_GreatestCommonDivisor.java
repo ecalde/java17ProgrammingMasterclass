@@ -25,5 +25,41 @@ public class WhileLoop_GreatestCommonDivisor {
     public static void main(String[] args) {
 
     }
-    public static void getGreatestCommonDivisor()
+    /*
+    public static int getGreatestCommonDivisor(int first, int second) {
+        if (first >= 10 && second >= 10) {
+            int gcd = 1;
+            if (first > second) {
+                for (int i = 1; i <= first; i++) {
+                    if (first % i == 0 && second % i == 0 && i > gcd) {
+                        gcd = i;
+                    }
+                }
+            } else {
+                for (int i = 1; i <= second; i++) {
+                    if (second % i == 0 && first % i == 0 && i > gcd) {
+                        gcd = i;
+                    }
+                }
+            }
+
+            return gcd;
+        } else
+            return -1;
+    }
+
+     */
+    public static int getGreatestCommonDivisor(int first, int second) {
+        if ( first >= 10 && second >= 10) {
+            while (first != second) {
+                if (first > second)
+                    first -= second;
+                else
+                    second -= first;
+            }
+            return first;
+        }
+        else
+            return -1;
+    }
 }
